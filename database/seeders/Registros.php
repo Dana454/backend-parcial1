@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Book;
+use Illuminate\Support\Facades\DB;
 
 class Registros extends Seeder
 {
@@ -80,7 +82,7 @@ class Registros extends Seeder
             'copias_totales' => 4, 
             'copias_disponibles' => 4,
             'estado' => true,
-        ])
+        ]);
 
         DB::table('books') ->insert([
             'titulo' => 'Rayuela',
@@ -89,7 +91,7 @@ class Registros extends Seeder
             'copias_totales' => 2,
             'copias_disponibles' => 2,
             'estado' => true,
-        ])
+        ]);
 
         DB::table('books') ->insert([
             'titulo' => 'Hamlet',
@@ -98,6 +100,10 @@ class Registros extends Seeder
             'copias_totales' => 5,
             'copias_disponibles' => 5,
             'estado' =>true,
-        ])
+        ]);
+        
+        $books = Book::factory()->count(90)->create();
     }   
 }
+
+
