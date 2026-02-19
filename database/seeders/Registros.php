@@ -24,7 +24,7 @@ class Registros extends Seeder
         DB::table('books')->insert([
             'titulo' => 'Cien años de soledad',
             'descripcion' => 'Historia de la familia Buendía',
-            'ISNB' => ,
+            'ISNB' => 9780307350435,
             'copias_totales' => 3,
             'copias_disponibles' => 3,
             'estado' => true,
@@ -33,7 +33,7 @@ class Registros extends Seeder
         DB::table('books')->insert([
             'titulo' => 'Orgullo y Prejuicio',
             'descripcion' => 'Novela de costumbres y amor',
-            'ISNB' => ,
+            'ISNB' => 9788467040418,
             'copias_totales' => 4,
             'copias_disponibles' => 4,
             'estado' => true,
@@ -42,7 +42,7 @@ class Registros extends Seeder
         DB::table('books')->insert([
             'titulo' => 'Crimen y Castigo',
             'descripcion' => 'Dilemas morales y justicia',
-            'ISNB' => ,
+            'ISNB' => 9788420651330,
             'copias_totales' => 2,
             'copias_disponibles' => 2,
             'estado' => true,
@@ -50,7 +50,7 @@ class Registros extends Seeder
         DB::table('books')->insert([
             'titulo' => 'El principito',
             'descripcion' => 'relato corto sobre la vida',
-            'ISNB' => ,
+            'ISNB' => 9780156013987,
             'copias_totales' => 10,
             'copias_disponibles' => 10,
             'estado' => true,
@@ -58,7 +58,7 @@ class Registros extends Seeder
         DB::table('books')->insert([
             'titulo' => '1984',
             'descripcion' => 'Distopía política y vigilancia',
-            'ISNB' => ,
+            'ISNB' => 9788466332514,
             'copias_totales' => 6,
             'copias_disponibles' => 6,
             'estado' => true,
