@@ -12,7 +12,23 @@ class controllerBook extends Controller
      */
     public function index()
     {
-        //
+        $query = Book::query();
+
+        // Filtro por titulo
+         if ($request->filled('titulo')) {
+        $query->where('titulo', 'like', '%' . $request->titulo . '%');
+    }
+         if ($request->filled('ISNB')) {
+        $query->where('ISNB', 'like', '%' . $request->ISNB . '%');
+    }
+        if ($request->filled('estado')) {
+        $query->where('ISNB', 'like', '%' . $request->ISNB . '%');
+    }
+   
+
+        $books = $query->paginate(10)->withQueryString();
+
+        return BookResource::collection($books);
     }
 
     /**
