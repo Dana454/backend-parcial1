@@ -22,6 +22,6 @@ class BookResource extends JsonResource
             'copias_totales' => $this->copias_totales,
             'copias_disponibles' => $this->copias_disponibles,
             'estado' => $this->estado,
-        ]
+        ];
     }
 }

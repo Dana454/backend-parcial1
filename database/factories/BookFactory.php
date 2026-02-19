@@ -26,9 +26,5 @@ class BookFactory extends Factory
         ];
     }
 }
-// la diferencia entre el factory y el seeder es que el factory se utiliza para generar 
-// datos de prueba de manera dinámica, mientras que el seeder se utiliza para poblar la base 
-// de datos con datos específicos y predefinidos. El factory es más flexible y se puede usar 
-// en pruebas unitarias o para generar grandes cantidades de datos, mientras que el seeder es
-//  ideal para establecer datos iniciales o de referencia en la base de datos.
+
 
